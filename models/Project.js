@@ -28,10 +28,10 @@ Project.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    user_id: {
+    place_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'place',
         key: 'id',
       },
     },

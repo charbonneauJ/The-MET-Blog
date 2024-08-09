@@ -3,6 +3,25 @@ const router = require('express').Router();
 const { Place } = require('../../models');
 
 // If a POST request is made to /api/users, a new user is created. The user id and logged in state is saved to the session within the request object.
+router.get("/", async (req, res) => {
+  // be sure to include its associated Category and Tag data
+
+  console.log({ req, res });
+
+  const places = await Place.findAll({});
+  console.log(places);
+  if (!places) {
+    res.status(400).send("No places found.");
+    return;
+  }
+
+  res.status(200).json(places);
+});
+
+
+
+
+
 router.post('/', async (req, res) => {
   try {
     const placeData = await Place.create(req.body);

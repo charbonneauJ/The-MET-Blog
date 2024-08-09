@@ -4,23 +4,23 @@
     "travel_advisory": "hot",
     "other_names":"bla bla bla",
     "languages_spoken": "dark tongue",
-    "traveler_testimonial": "yada yada yada",
-    "user_testimonial": "user types their thing here"
+    "traveler_testimonial": "yada yada",
+    "user_testimonial": "user types their thing here?"
   },
   {
     "location_name": "Rivendell",
     "travel_advisory": "elfy",
-    "other_names":"bla bla bla",
+    "other_names":"bla bla",
     "languages_spoken": "Noldor",
-    "traveler_testimonial": "yada yada yada",
-    "user_testimonial": "user types their thing here"
+    "traveler_testimonial": "yada",
+    "user_testimonial": "user types their thing here."
   },
   {
     "location_name": "Bree",
     "travel_advisory": "bring a towel",
-    "other_names":"bla bla bla",
+    "other_names":"bla",
     "languages_spoken": "common tongue",
     "traveler_testimonial": "yada yada yada",
-    "user_testimonial": "user types their thing here"
+    "user_testimonial": "user types their thing here!"
   }
 ]
