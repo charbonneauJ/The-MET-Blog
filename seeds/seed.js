@@ -1,9 +1,9 @@
-const sequelize = require('../config/connection');
-const { Project, Place } = require('../models');
+const sequelize = require("../config/connection");
+const { Project, Place } = require("../models");
 
-const placeData = require('./placeData.json');
+const placeData = require("./placeData.json");
 
-const projectData = require('./projectData.json');
+const projectData = require("./projectData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });

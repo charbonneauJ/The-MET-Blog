@@ -41,7 +41,7 @@ Place.init(
       allowNull: true,
       unique: true,
     },
-    
+
     user_testimonial: {
       type: DataTypes.STRING,
       allowNull: true,
