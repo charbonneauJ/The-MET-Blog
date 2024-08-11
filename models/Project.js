@@ -28,13 +28,13 @@ Project.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    place_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'place',
-        key: 'id',
-      },
-    },
+    // user_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'user',
+    //     key: 'id',
+    //   },
+    // },
   },
   {
     sequelize,

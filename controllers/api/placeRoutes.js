@@ -3,26 +3,22 @@ const router = require('express').Router();
 const { Place } = require('../../models');
 
 // If a POST request is made to /api/users, a new user is created. The user id and logged in state is saved to the session within the request object.
-router.get("/", async (req, res) => {
+router.get("/", getPlaces);
+
+async function getPlaces(req, res) {
   // be sure to include its associated Category and Tag data
-
-  console.log({ req, res });
-
   const places = await Place.findAll({});
-  console.log(places);
   if (!places) {
     res.status(400).send("No places found.");
     return;
   }
 
   res.status(200).json(places);
-});
+}
 
 
-
-
-
-router.post('/', async (req, res) => {
+router.post('/', 
+  async (req, res) => {
   try {
     const placeData = await Place.create(req.body);
 
@@ -38,6 +34,7 @@ router.post('/', async (req, res) => {
 });
 
 // If a POST request is made to /api/users/login, the function checks to see if the user information matches the information in the database and logs the user in. If correct, the user ID and logged-in state are saved to the session within the request object.
+// TODO this either needs to be removed OR moved to the User/Authentication controller
 router.post('/login', async (req, res) => {
   try {
     const placeData = await Place.findOne({ where: { email: req.body.email } });
