@@ -1,16 +1,10 @@
-const router = require('express').Router();
+const router = require("express").Router();
 // Import the Project model from the models folder
-const { Project } = require('../../models');
+const { Project } = require("../../models");
 
-// If a POST request is made to /api/projects, a new project is created. If there is an error, the function returns with a 400 error. 
+// If a POST request is made to /api/projects, a new project is created. If there is an error, the function returns with a 400 error.
 
-
-
-
-
-
-
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const newProject = await Project.create({
       ...req.body,
@@ -23,8 +17,8 @@ router.post('/', async (req, res) => {
   }
 });
 
-// If a DELETE request is made to /api/projects/:id, that project is deleted. 
-router.delete('/:id', async (req, res) => {
+// If a DELETE request is made to /api/projects/:id, that project is deleted.
+router.delete("/:id", async (req, res) => {
   try {
     const projectData = await Project.destroy({
       where: {
@@ -34,7 +28,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!projectData) {
-      res.status(404).json({ message: 'No project found with this id!' });
+      res.status(404).json({ message: "No project found with this id!" });
       return;
     }
 

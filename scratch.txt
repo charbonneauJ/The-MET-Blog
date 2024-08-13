@@ -1,0 +1,11 @@
+// Testimonial //
+
+{
+  id: INTEGER
+  user_id: ref to user.id 
+  place_id: ref to place.id
+  user_input: text
+
+}
+
+--- JOIN username? After users is made.
