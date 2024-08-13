@@ -25,7 +25,7 @@ Testimonial.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    user_id: {
+    User_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
