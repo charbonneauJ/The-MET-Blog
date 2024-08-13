@@ -12,7 +12,7 @@ User.init(
       allowNull: false,
       primaryKey: true,
     },
-    username: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
@@ -32,8 +32,9 @@ User.init(
   },
   {
     sequelize, // Pass the connection instance
-    modelName: "User", // Name the model
-    tableName: "users", // Explicitly name the table (optional)
+    modelName: "user", // Name the model
+    freezeTableName: true,
+    underscored: true,
     timestamps: true, // Automatically adds createdAt and updatedAt fields
   }
 );
