@@ -1,29 +1,15 @@
-const Sequelize = require('sequelize');
-const { Model, DataTypes } = require('sequelize');
-const User = require('./User');
-const Project = require('./Project');
+const Place = require("./Place");
+const Testimonial = require("./Testimonial");
+const User = require("./User");
+// Creates a relationship between User and Testimonial model, with the User having a "has many" relationship with Testimonial model.
+Place.hasMany(Testimonial, {
+  foreignKey: "place_id",
+  onDelete: "CASCADE",
+});
 
-const sequelize = require('../config/connection'); // Adjust the path as needed
+// Creates a relationship between User and Testimonial model, with a "belongs to" relationship of the Testimonial to the User.
+Testimonial.belongsTo(User, {
+  foreignKey: "user_id",
+});
 
-class user extends Model {}
-
-User.init(
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    // other fields...
-  },
-  {
-    sequelize,
-    modelName: 'User',
-  }
-);
-
-module.exports = User;
+module.exports = { Place, Testimonial };
