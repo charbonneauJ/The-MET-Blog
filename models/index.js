@@ -1,3 +1,4 @@
+const sequelize = require("../config/connection");
 const Place = require("./Place");
 const Testimonial = require("./Testimonial");
 const User = require("./User");
@@ -13,3 +14,4 @@ Testimonial.belongsTo(User, {
 });
 
 module.exports = { Place, Testimonial };
+module.exports = sequelize;
