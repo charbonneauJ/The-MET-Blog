@@ -1,0 +1,23 @@
+
+<h2>login</h2>
+<p>Please enter your login</p>
+
+/this is going to maybe be login start to pull up map maybe???
+ {{#if isDisplayNamed}}
+    <p>login email {{ name }}</p>
+
+    {{else}}
+    
+    <p>Opps! No login found</p>
+
+ {{/if}}
+
+ {{#if isPasswordEnabled}}
+
+    <p>Password {{password}}</p>
+
+    {{else}}
+
+    <p>Password incorrect!!!</p>
+
+ {{/if}}
