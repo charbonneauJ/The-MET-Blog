@@ -56,6 +56,7 @@ app.get('/dashboard', (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
 app.use(routes);
  
 sequelize.sync({ force: false }).then(() => {

@@ -6,4 +6,6 @@ function ensureAuthenticated(req, res, next) {  // defines 'ensureAuthenticated'
     }
 }
 
+app.use(express.static('Public'));
+
 module.exports = ensureAuthenticated;  // exports code to be used througout application.
