@@ -1,26 +1,91 @@
 [
   {
     "location_name": "Mines of Moria",
-    "travel_advisory": "hot",
-    "other_names":"bla bla bla",
-    "languages_spoken": "dark tongue",
+    "travel_advisory": "'We have barred the gates… but cannot hold them for long. The ground shakes. We cannot get out. A shadow moves in the dark. 'We cannot get out…They are coming!'",
+    "other_names":"Khazad-dûm",
+    "languages_spoken": "Khuzdul/Dwarvish, Udûn/Orkish", 
     "traveler_testimonial": "yada yada",
     "user_testimonial": "user types their thing here?"
   },
   {
     "location_name": "Rivendell",
-    "travel_advisory": "elfy",
-    "other_names":"bla bla",
+    "travel_advisory": "Last Homely House East of the Sea.",
+    "other_names":"Imladris",
     "languages_spoken": "Noldor",
     "traveler_testimonial": "yada",
     "user_testimonial": "user types their thing here."
   },
   {
     "location_name": "Bree",
-    "travel_advisory": "bring a towel",
-    "other_names":"bla",
-    "languages_spoken": "common tongue",
+    "travel_advisory": " At the time of the War of the Ring, Bree-land was the only part of Middle-earth where Men and hobbits dwelt together",
+    "other_names":"Bree-Hill",
+    "languages_spoken": "common speech",
     "traveler_testimonial": "yada yada yada",
     "user_testimonial": "user types their thing here!"
+  },
+  {
+    "location_name": "Hobbiton",
+    "travel_advisory": "Bring your apetite and don't do anything unexpected",
+    "other_names": "Eriador",
+    "languages_spoken": "Common Speech",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "Mirkwood",
+    "travel_advisory": "Do NOT leave the path.",
+    "other_names": "Taur-nu-Fuin",
+    "languages_spoken": "Silvan Elvish, Goblin Tongue",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "The Burrow Downs",
+    "travel_advisory": "Do NOT disturb the wights.",
+    "other_names": "Tyrn Gorthad",
+    "languages_spoken": "Mixed",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "Weathertop",
+    "travel_advisory": "No sausages, tomatoes, or nice crispy bacon. You'll regret it.",
+    "other_names": "Amon Sûl",
+    "languages_spoken": "Adûnaic(language of the West)",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "Helms Deep",
+    "travel_advisory": "Look to my coming on the first light of the fifth day, at dawn look to the east.",
+    "other_names": "Súthburg",
+    "languages_spoken": "Rohirric/Westron",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "Edoras",
+    "travel_advisory": "It's full of horses",
+    "other_names": "Sindarin",
+    "languages_spoken": "Rohirric/Westron",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "Minas Tirith",
+    "travel_advisory": "The Tower Guard Shall Take Up The Call: 'The Lords Of Gondor Have Returned.'",
+    "other_names": "Minas Anor",
+    "languages_spoken": "Númenórean Sindarin",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
+  },
+  {
+    "location_name": "Osgiliath",
+    "travel_advisory": "A testimony to what once was.",
+    "other_names": "Old Gondor",
+    "languages_spoken": "Westron",
+    "traveler_testimonial": "iubdf",
+    "user_testimonial": "0fdg"
   }
 ]
+  
