@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
-const sequelize = require("../config/connection");
+const sequelize = require("../Develope/config/connection");
 
 class Place extends Model {}
 

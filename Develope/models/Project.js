@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const sequelize = require('../Develope/config/connection');
 
 // Create Project model and datatypes, including the user_id foreign key.
 class Project extends Model {}

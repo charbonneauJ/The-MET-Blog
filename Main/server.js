@@ -1,6 +1,6 @@
 const express = require("express");
 const session = require("express-session");
-const routes = require("./controllers");
+const routes = require("../Develope/controllers");
 const exphbs = require("express-handlebars");
 
 const sequelize = require("./config/connection");
@@ -41,16 +41,8 @@ app.get('/', (req,res) => {
 
 });
 
-app.get('map', (req,res) => {
+app.get('/map', (req,res) => {
   res.render('map'), { title: 'Map'};
-});
-
-//this is for a different conditional that may or may not be used
-app.get('/dashboard', (req, res) => {
-
-    res.render('dashboard', {
-        isListEnabled: false,
-    });
 });
 
 app.use(express.json());
