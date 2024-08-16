@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const sequelize = require("../Develope/config/connection");
 
 // Create Testimonial model and datatypes, including the user_id foreign key.
 class Testimonial extends Model {}
