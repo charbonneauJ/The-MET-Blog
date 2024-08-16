@@ -13,32 +13,30 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .login-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     border: 2px solid #8b5e3c;
 }
 
-
-form {
+.form {
     display: flex;
     flex-direction: column;
 }
 
-
-.input-group {
+.form-group {
     margin-bottom: 20px;
     position: relative;
 }
 
-input[type="text"],
-input[type="password"] {
+.form-input {
     width: 100%;
     padding: 12px;
     border: 1px solid #8b5e3c; 
@@ -50,7 +48,6 @@ input[type="password"] {
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
 label {
     font-family: 'Cinzel', serif;
     font-size: 14px;
@@ -60,8 +57,7 @@ label {
     color: #6a4e34; 
 }
 
-
-.login-button {
+.btn-primary {
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
@@ -73,10 +69,9 @@ label {
     transition: background-color 0.3s ease;
 }
 
-.login-button:hover {
+.btn-primary:hover {
     background-color: #8b5e3c; 
 }
-
 
 a {
     color: #6a4e34;
@@ -88,13 +83,11 @@ a:hover {
     text-decoration: underline;
 }
 
-
 p {
     font-family: 'Cinzel', serif;
     font-size: 14px;
     color: #3a3a3a;
 }
-
 
 input:focus {
     outline: none;
@@ -106,12 +99,9 @@ button:focus {
     box-shadow: 0 0 5px 2px rgba(106, 78, 52, 0.5); 
 }
 
-
 @media (max-width: 768px) {
     .login-container {
         padding: 30px;
         border-radius: 10px;
     }
 }
-
-
