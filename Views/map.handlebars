@@ -3,15 +3,26 @@
 
 <div id="map">
   <div class="minesofmoria">
+  {{!-- <div class="rivendell">
+  <div class="bree">
+  <div class="hobbiton">
+  <div class="mirkwood">
+  <div class="burrowdowns">
+  <div class="weathertop">
+  <div class="helmsdeep">
+  <div class="edoras">
+  <div class="minastirith">
+  <div class="osgiliath"> --}}
   {{#each places}}
     <img src="/assets/map-pin.png" alt="map pin" class="mapPin" />
     <div class="tooltip">
       <div class="tooltip-container">
         <div class="tooltip-header"> {{ this.location_name }} </div>
-        <div class="tooltip-body">
-
-            
-        </div>
+        <div class="tooltip-body"> Travel Advisory: {{ this.travel_advisory }} </div>
+        <div class="tooltip-body"> Other Names: {{ this.other_names }} </div>
+        <div class="tooltip-body"> Languages Spoken: {{ this.languages_spoken }} </div>
+        <div class="tooltip-body"> Traveler Testimonial: {{ this.traveler_testimonial }} </div>
+        <div class="tooltip-body"> User Review: {{ this.user_testimonial }} </div>
       </div>
     </div>
   </div>

@@ -1,5 +1,8 @@
 /* All below is handlebars for map! */
-
+@font-face {
+  font-family: "Middleearth";
+  src: url("Middleearth.ttf");
+}
 
 #map {
     background: url('/assets/map.svg') no-repeat;
@@ -12,10 +15,20 @@
   .tooltip-container {
     text-align: center;
     margin: 10px;
-    background-color: grey;
-    height: 50px;
-    width: 100px;
+    background-color: rgb(219, 210, 196);
+    height: 200px;
+    width: 500px;
+    font-family: "Middleearth";
   }
+
+  .tooltip-header {
+    font-size: large;
+  }
+
+  .tooltip-body {
+    font-size: smaller;
+  } 
+
   
   .tooltip {
     position: relative;
@@ -24,8 +37,8 @@
   
   #map .minesofmoria {
     position: absolute;
-    left: 500px;
-    top: 378px;
+    left: 542px;
+    top: 292px;
   }
   
   #map .minesofmoria .mapPin {
@@ -36,17 +49,16 @@
     display: block;
   }
   
-  #map .mordor {
+  /* #map .rivendell {
     position: absolute;
-    right: 80px;
-    top: 500px;
+    left: 400;
+    top: 300;
   }
   
-  #map .mordor .mapPin {
+  #map .rivendell .mapPin {
     width: 25px;
   }
   
-  #map .mordor:hover > .tooltip {
+  #map .rivendell:hover > .tooltip {
     display: block;
-  }
-  
+  } */

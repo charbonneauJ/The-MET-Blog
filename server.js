@@ -61,13 +61,6 @@ app.get(
   }
 );
 
-//this is for a different conditional that may or may not be used
-app.get("/dashboard", (req, res) => {
-  res.render("dashboard", {
-    isListEnabled: false,
-  });
-});
-
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.use(express.json());
