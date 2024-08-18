@@ -1,9 +1,37 @@
-const express = require("express"); // This is a web framework for Node.js that allows you to create routes, handle HTTP requests, and build web applications.
-const ensureAuthenticated = require("../middleware/auth"); // process requests before they reach the route handler. "ensureAuthenticated" middleware checks whether the user is authenticated (logged in) before allowing access to certain routes. (such as to the dashboard)
-const router = express.Router(); // allows you to define routes in a modular way, so you can keep your routes organized. Instead of defining all routes in a single file, you can create separate route modules.
 
-// router.get('/dashboard', ensureAuthenticated, (res, res) => {  // This line defines a route for the /dashboard endpoint. It uses the HTTP GET method.(only runs of user is authenticated)
-//     res.send("Welcome to your dashboard!"); // Sends logged user welcome message.
-// });
+const express = require('express');
+const router = express.Router();
 
-module.exports = router; // exports code allowing it to be used throughout application.
+function ensureAuthenticated(req, res, next) {
+    if (req.session.userId) {
+        return next();
+    } else {
+        res.status(401).send({ error: 'You must be logged in to view this page.' });
+    }
+}
+
+
+router.get('/public', (req, res) => {
+    res.send('This is a public blog post.');
+});
+
+
+router.get('/private', ensureAuthenticated, (req, res) => {
+    res.send('This is a private blog post that only authenticated users can see.');
+});
+
+
+router.post('/new', ensureAuthenticated, (req, res) => {
+    const { title, content } = req.body;
+
+    
+    Post.create({
+        title,
+        content,
+        userId: req.session.userId
+    })
+    .then(post => res.status(201).json(post))
+    .catch(error => res.status(500).json({ error: 'Error creating post' }));
+});
+
+module.exports = router;
