@@ -68,7 +68,7 @@ app.get("/dashboard", (req, res) => {
   });
 });
 
-app.use(express.static(path.join(__dirname, "/Public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
