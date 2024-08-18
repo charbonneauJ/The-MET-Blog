@@ -1,2 +1,21 @@
+<h1> Welcome to the map! </h1>
 
-<h2> Map page</h2>
+
+<div id="map">
+  <div class="minesofmoria">
+    <ul class="people_list">
+  {{#each places}}
+    <li>{{ this.location_name }}</li>
+  {{/each}}
+</ul>
+    <img src="/assets/map-pin.png" alt="map pin" class="mapPin" />
+    <div class="tooltip">
+      <div class="tooltip-container">
+        <div class="tooltip-header">The Mines of Moria</div>
+        <div class="tooltip-body">
+          {{! <button>This should be where i pull in the table for place, and the user input from login page attached?</button> }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
