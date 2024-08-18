@@ -53,8 +53,8 @@
   
   #map .rivendell {
     position: absolute;
-    left: 10px;
-    top: -109px;
+    left: 554px;
+    top: 183px;
   }
   
   #map .rivendell .mapPin {
@@ -67,8 +67,8 @@
 
   #map .bree {
     position: absolute;
-    left: -182px;
-    top: 14px;
+    left: 369px;
+    top: 198px;
   }
   
   #map .bree .mapPin {
@@ -81,8 +81,8 @@
 
   #map .hobbiton {
     position: absolute;
-    left: -76px;
-    top: -4px;
+    left: 292px;
+    top: 195px;
   }
   
   #map .hobbiton .mapPin {
@@ -95,8 +95,8 @@
 
   #map .mirkwood {
     position: absolute;
-    left: 425px;
-    top: 27px;
+    left: 700px;
+    top: 206px;
   }
   
   #map .mirkwood .mapPin {
@@ -109,8 +109,8 @@
 
   #map .barrowdowns {
     position: absolute;
-    left: -381px;
-    top: -19px;
+    left: 338px;
+    top: 203px;
   }
   
   #map .barrowdowns .mapPin {
@@ -123,8 +123,8 @@
 
   #map .weathertop {
     position: absolute;
-    left: 86px;
-    top: -11px;
+    left: 427px;
+    top: 190px;
   }
   
   #map .weathertop .mapPin {
@@ -137,8 +137,8 @@
 
   #map .helmsdeep {
     position: absolute;
-    left: 105px;
-    top: 283px;
+    left: 534px;
+    top: 476px;
   }
   
   #map .helmsdeep .mapPin {
@@ -151,8 +151,8 @@
 
   #map .edoras {
     position: absolute;
-    left: 38px;
-    top: 19px;
+    left: 565px;
+    top: 491px;
   }
   
   #map .edoras .mapPin {
@@ -165,8 +165,8 @@
 
   #map .minastirith {
     position: absolute;
-    left: 150px;
-    top: 72px;
+    left: 730px;
+    top: 563px;
   }
   
   #map .minastirith .mapPin {
@@ -179,8 +179,8 @@
 
   #map .osgiliath {
     position: absolute;
-    left: 28px;
-    top: 0px;
+    left: 757px;
+    top: 560px;
   }
   
   #map .osgiliath .mapPin {
