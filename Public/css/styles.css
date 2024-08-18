@@ -3,9 +3,10 @@
 
 #map {
     background: url('/assets/map.svg') no-repeat;
-    width: 1000px;
-    height: 1000px;
+    width: 1200px;
+    height: 860px;
     position: relative;
+    margin: auto;
   }
   
   .tooltip-container {
