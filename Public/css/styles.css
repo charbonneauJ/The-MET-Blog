@@ -35,6 +35,8 @@
     display: none;
   }
   
+/* all of the map pins absolute reference below.  */
+
   #map .minesofmoria {
     position: absolute;
     left: 542px;
@@ -49,10 +51,10 @@
     display: block;
   }
   
-  /* #map .rivendell {
+  #map .rivendell {
     position: absolute;
-    left: 400;
-    top: 300;
+    left: 10px;
+    top: -109px;
   }
   
   #map .rivendell .mapPin {
@@ -61,4 +63,130 @@
   
   #map .rivendell:hover > .tooltip {
     display: block;
-  } */
+  }
+
+  #map .bree {
+    position: absolute;
+    left: -182px;
+    top: 14px;
+  }
+  
+  #map .bree .mapPin {
+    width: 25px;
+  }
+  
+  #map .bree:hover > .tooltip {
+    display: block;
+  }
+
+  #map .hobbiton {
+    position: absolute;
+    left: -76px;
+    top: -4px;
+  }
+  
+  #map .hobbiton .mapPin {
+    width: 25px;
+  }
+  
+  #map .hobbiton:hover > .tooltip {
+    display: block;
+  }
+
+  #map .mirkwood {
+    position: absolute;
+    left: 425px;
+    top: 27px;
+  }
+  
+  #map .mirkwood .mapPin {
+    width: 25px;
+  }
+  
+  #map .mirkwood:hover > .tooltip {
+    display: block;
+  }
+
+  #map .barrowdowns {
+    position: absolute;
+    left: -381px;
+    top: -19px;
+  }
+  
+  #map .barrowdowns .mapPin {
+    width: 25px;
+  }
+  
+  #map .barrowdowns:hover > .tooltip {
+    display: block;
+  }
+
+  #map .weathertop {
+    position: absolute;
+    left: 86px;
+    top: -11px;
+  }
+  
+  #map .weathertop .mapPin {
+    width: 25px;
+  }
+  
+  #map .weathertop:hover > .tooltip {
+    display: block;
+  }
+
+  #map .helmsdeep {
+    position: absolute;
+    left: 105px;
+    top: 283px;
+  }
+  
+  #map .helmsdeep .mapPin {
+    width: 25px;
+  }
+  
+  #map .helmsdeep:hover > .tooltip {
+    display: block;
+  }
+
+  #map .edoras {
+    position: absolute;
+    left: 38px;
+    top: 19px;
+  }
+  
+  #map .edoras .mapPin {
+    width: 25px;
+  }
+  
+  #map .edoras:hover > .tooltip {
+    display: block;
+  }
+
+  #map .minastirith {
+    position: absolute;
+    left: 150px;
+    top: 72px;
+  }
+  
+  #map .minastirith .mapPin {
+    width: 25px;
+  }
+  
+  #map .minastirith:hover > .tooltip {
+    display: block;
+  }
+
+  #map .osgiliath {
+    position: absolute;
+    left: 28px;
+    top: 0px;
+  }
+  
+  #map .osgiliath .mapPin {
+    width: 25px;
+  }
+  
+  #map .osgiliath:hover > .tooltip {
+    display: block;
+  }

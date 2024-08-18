@@ -3,17 +3,18 @@
 
 <div id="map">
   <div class="minesofmoria">
-  {{!-- <div class="rivendell">
+  <div class="rivendell">
   <div class="bree">
   <div class="hobbiton">
   <div class="mirkwood">
-  <div class="burrowdowns">
+  <div class="barrowdowns">
   <div class="weathertop">
   <div class="helmsdeep">
   <div class="edoras">
   <div class="minastirith">
-  <div class="osgiliath"> --}}
+  <div class="osgiliath">
   {{#each places}}
+ {{#if database_name}}
     <img src="/assets/map-pin.png" alt="map pin" class="mapPin" />
     <div class="tooltip">
       <div class="tooltip-container">
@@ -26,6 +27,7 @@
       </div>
     </div>
   </div>
+ {{/if}}
   {{/each}}
 </div>
 </div>

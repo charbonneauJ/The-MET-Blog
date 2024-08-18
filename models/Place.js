@@ -12,6 +12,11 @@ Place.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    database_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
 
     location_name: {
       type: DataTypes.STRING,

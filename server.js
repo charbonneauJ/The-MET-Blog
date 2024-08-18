@@ -44,22 +44,14 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get(
-  "/map",
-  // (req, res, next) => {
-  //   req.firstName = "John";
-  //   next();
-  // },
-
-  (req, res) => {
-    Place.findAll({ raw: true }).then((places) => {
-      res.render("map", {
-        title: "Map",
-        places: places,
-      });
+app.get("/map", (req, res) => {
+  Place.findAll({ raw: true }).then((places) => {
+    res.render("map", {
+      title: "Map",
+      places: places,
     });
-  }
-);
+  });
+});
 
 app.use(express.static(path.join(__dirname, "/public")));
 
