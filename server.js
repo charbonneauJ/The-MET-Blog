@@ -3,6 +3,9 @@ const session = require("express-session");
 const routes = require("./controllers");
 const exphbs = require("express-handlebars");
 
+const blogRoutes = require('./routes/blog'); 
+
+
 const { Place } = require("./models");
 
 const path = require("path");
@@ -26,6 +29,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use('/blog', blogRoutes);
 
 //handlebars code that will look for handlebars
 app.engine("handlebars", hbs.engine);
