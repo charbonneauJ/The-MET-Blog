@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Cinzel Decorative', serif; 
+    background-color: #f4f4f4; 
+    color: #3a3a3a; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1533038590840-1cde6e668a91'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #8b5e3c;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8b5e3c; 
+    border-radius: 8px;
+    font-family: 'Cinzel', serif; 
+    font-size: 16px;
+    background-color: #fdfaf6; 
+    color: #3a3a3a;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+    color: #6a4e34; 
+}
+
+.btn-primary {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #705338; 
+    color: #fff;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #966641; 
+}
+
+a {
+    color: #705338;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    color: #3a3a3a;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6a4e34;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(106, 78, 52, 0.5); 
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
