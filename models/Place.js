@@ -51,7 +51,6 @@ Place.init(
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
-      
     },
   },
   // password: {

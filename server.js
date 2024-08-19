@@ -3,8 +3,7 @@ const session = require("express-session");
 const routes = require("./controllers");
 const exphbs = require("express-handlebars");
 
-const blogRoutes = require('./routes/blog'); 
-
+// const blogRoutes = require("./routes/blog");
 
 const { Place } = require("./models");
 
@@ -29,7 +28,7 @@ const sess = {
 };
 
 app.use(session(sess));
-app.use('/blog', blogRoutes);
+// app.use("/blog", blogRoutes);
 
 //handlebars code that will look for handlebars
 app.engine("handlebars", hbs.engine);
@@ -37,8 +36,8 @@ app.set("view engine", "handlebars");
 
 //routing that connects to the handlebars
 
-app.get("/", (req, res) => {
-  res.render("index", {
+app.get("/login", (req, res) => {
+  res.render("login", {
     title: "Login Page",
     //this is to start login potentially remember to change accordingly
     name: "email",
