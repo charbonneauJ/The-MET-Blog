@@ -4,6 +4,10 @@
   src: url("Middleearth.ttf");
 }
 
+h1 {
+  position: absolute;
+}
+
 #map {
     background: url('/assets/map.svg') no-repeat;
     width: 1200px;
@@ -218,13 +222,12 @@
 
 
   /* General Styles */
-body {
+.login-body {
   font-family: 'Cinzel Decorative', serif; /* Use a decorative, fantasy-inspired font */
   background-color: #f4f4f4; /* A soft, natural background color */
   color: #3a3a3a; /* Gentle, earthy text color */
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
