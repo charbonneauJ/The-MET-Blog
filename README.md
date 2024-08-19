@@ -20,8 +20,9 @@ If you have any feedback, please reach out to us at https://github.com/charbonne
 
 ## Screenshots
 
-![App Screenshot](file:///C:/Users/asdf/Pictures/Screenshots/LoginMETBLOG.png)
-![App Screenshot](file:///C:/Users/asdf/Pictures/Screenshots/MapMETBLOG.png)
+![LoginMETBLOG](https://github.com/user-attachments/assets/4c226f2b-645b-4277-b6ee-69b7aba35318)
+![MapMETBLOG](https://github.com/user-attachments/assets/b9994bd4-d165-4242-87b4-4fb61f962341)
+
 
 ## Tech Stack
 
