@@ -8,7 +8,7 @@ router.post('/signup', async (req, res) => {  //  This route is for the POST met
     try {
         const { email , password } = req.body;  // Shows that the applications expects to recieve the "password" and "email" from new user.
         const User = await User.create({ email, password});  // Creates the new user account using provided "password" and "email".(should be hashed before being stored in the database)
-        req.session.userId = user.id;  // stores new user data in the session. (they are considered logged in)
+        req.session.userId = User.id;  // stores new user data in the session. (they are considered logged in)
         req.statusCode(201).send({ message: "User account created succefully!"});  // Following code sends a response depending on whether or not the user is succesfully logged in.
     } catch(error) {
         res.status(400).send({ error: 'User account creation failed.'});
@@ -21,7 +21,7 @@ router.post('/login', async (req, res) => {  // Route for POST method on the '/L
         const User = await User.findOne({ where: { email } });  // Searches data base for provided email during login.
 
         if(User && await bcrypt.compare(password, User.password)) {  // If a user is found, bcrypt.compare is used to compare the provided password with the hashed password stored in the database.
-            req.session.userId = User.id;  // If the compared passwords match the users ID is stored in the session. (they are logged in)
+            req.session.UserId = User.id;  // If the compared passwords match the users ID is stored in the session. (they are logged in)
             res.send({ message: 'Login was succesful!' });  // sends mesage stating user has been logged in.
         } else {
             res.status(401).send({ error: 'Invalid email or password.'});  // If the user provides wrong email or password the codes sends an error message.
